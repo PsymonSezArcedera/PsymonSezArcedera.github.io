@@ -29,6 +29,10 @@
             .footer{
                 display: flex;
                 background-color:#22303c;
+				flex-direction: column;
+				justify-content: left;
+                flex-wrap: wrap;
+                padding: 0%;
             }
             .image{
                 width: 25%;
@@ -53,24 +57,47 @@
                 justify-content: space-evenly;
                 flex-wrap: wrap;
             }
+			.skill{
+                display: flex;
+                background-color:#0e161f;
+                flex-direction: row;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+            }
             .sk{
-                background-color:#16222e;
+                background-color:#0e161f;
                 flex-direction: column;
                 justify-content: space-between;
                 flex-wrap: wrap;
             }
             .details{
-
                 background-color:#192734;
                 flex-direction: column;
                 align-items:start;
                 flex-wrap: wrap;
-
-
             }
+			.projects{
+				display: flex;
+                background-color:#16222e;
+                flex-direction: row;
+                justify-content: space-evenly;
+                flex-wrap: nowrap;
+			}
+			.project{
+				display: flex;
+                background-color:#0e161f;
+                flex-direction: row;
+                justify-content: space-evenly;
+                flex-wrap: nowrap;
+			}
+			h4{
+				font-family:Arial, Helvetica, sans-serif;
+                padding: 1%;
+                color: white;
+			}
             h3{
                 font-family:Arial, Helvetica, sans-serif;
-                padding: 2%;
+                padding: 1%;
                 color: white;
             }
             h2{
@@ -78,6 +105,10 @@
                 padding: 2%;
                 color: white;
             }
+			.space{
+				height:20px;
+				background-color: white;
+			}
             
 
         </style>
@@ -89,20 +120,24 @@
             </div>
             <h3>PSYMON SEZ E. ARCEDERA</h3>
         </div>
+		<div class="space"></div>
         <div class = "info">
             <div class="image">
                 <img src="https://t4.ftcdn.net/jpg/02/90/27/39/360_F_290273933_ukYZjDv8nqgpOBcBUo5CQyFcxAzYlZRW.jpg" alt="profile photo">
             </div>
             <div class = "details">
-                <h2>DETAILS</h2>
                 <h3>Name: Psymon Sez Enrile Arcedera</h3>
                 <h3>Age : 19</h3>
                 <h3>Nationality : Filipino</h3>
                 <h3>Education : University of the Philippines Los Baños</h3>
+				<h3>Degree Program : BS Computer Science</h3>
             </div>
         </div>
-        <div class="skills">
-            <h2>SKILLS</h2>
+		<div class="space"></div>
+		<div class="skills">
+			<h2>SKILLS</h2>
+		</div>
+        <div class="skill">
             <div class="sk">
                 <h3>Python</h3>
             </div>
@@ -127,10 +162,23 @@
             <div class="sk">
                 <h3>Adaptability</h3>
             </div>
-
         </div>
+		<div class="space"></div>
+		<div class="projects">
+			<h2>PROJECTS</h2>
+		</div>
+		<div class="project">
+			<h3>DECODE LIFE : Mini RPG game</h3>
+			<h3>Grocery assistant</h3>
+			<h3>Diet planner</h3>
+			<h3>Regression Analysis tool</h3>
+			<h3>Spline interpolation tool</h3>		
+		</div>
+		<div class="space"></div>
         <div class="footer">
-            <h3>Footer</h3>
+            <h4>Mobile Number : 09123456790</h4>
+			<h4>Email : pearcedera@up.edu.ph</h4>
+			<h4>Address : Manila, Philippines</h4>
         </div>
     </body>
 </html>
